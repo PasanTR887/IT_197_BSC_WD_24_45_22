@@ -9,11 +9,6 @@
         i.className = "nav-menu";
     }
    }
- 
-
-
-
-
     var a = document.getElementById("loginBtn");
     var b = document.getElementById("registerBtn");
     var x = document.getElementById("login");
@@ -37,3 +32,4 @@
         y.style.opacity = 1;
     }
 
+    

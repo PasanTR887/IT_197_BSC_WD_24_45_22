@@ -1,3 +1,13 @@
+<?php
+
+include_once('lib/functions/userFunction.php');
+
+if(isset($_POST['btnLogin'])){
+   $result = Authentication($_POST['Email'],$_POST['UserPass']);
+   echo($result);
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +23,13 @@
  <div class="wrapper">
     <nav class="nav">
         <div class="nav-logo">
-            <p><img src="images/CRUSHIFY - Copy.jpg"></p>
+            <img src="images/CRUSHIFY - Copy.jpg" class="img">
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Find Match</a></li>
-                <li><a href="#" class="link">Inbox</a></li>
+                <li><a href="./lib/views/dashboards/user.php" class="link">Home</a></li>
+                <li><a href="./lib/views/dashboards/FindMatch.php" class="link">Find Match</a></li>
+                <li><a href="./lib/views/dashboards/inbox.php" class="link">Inbox</a></li>
                 <li><a href="#" class="link">Notifications</a></li>
             </ul>
         </div>
@@ -40,7 +50,7 @@
             </div>
             <div class="input-box">
                 <input type="email" name="Email" class="input-field" id="UserEmail" placeholder="E-mail">
-                
+                <i class="fas fa-eye"></i> 
             </div>
             <div class="input-box">
                 <input type="password" name="UserPass"class="input-field" id="UserPass"  placeholder="Password">
@@ -59,7 +69,7 @@
 
         <!------------------- registration form -------------------------->
         <div class="register-container" id="register">
-         <form action="" method="POST">
+         <form action="lib/routes/user/registration.php" method="POST">
             <div class="top">
                 <span>Have an account? <a href="#" onclick="login()">Log in</a></span>
                 <header>Sign Up</header>
@@ -85,9 +95,7 @@
         </div>
     </div>
 </div>   
-
 <script src="js/Script.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

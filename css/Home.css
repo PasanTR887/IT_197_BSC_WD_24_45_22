@@ -1,3 +1,54 @@
+
+/*Home*/
+.carousel-caption p {
+    font-size: 20px;
+    
+  }
+  
+  
+  .WelcomePara p{
+    margin-left: 25px;
+    font-family: 'Gill Sans MT';
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .WelcomePara h3{
+    font-family: Impact;
+    color: red;
+  }
+  
+  
+  .MissionPara {
+    padding-left: 70px;
+  }
+  
+  .MissionPara p{
+    margin-left: 30px;
+    font-family: 'Gill Sans MT';
+    font-size: 20px;
+    font-weight: 300;
+  }
+  
+  .MissionPara h3{
+    font-family: Impact;
+    color: red;
+  }
+  
+  
+  .TeamPara p{
+    margin-left: 25px;
+    font-family: 'Gill Sans MT';
+    font-size: 18px;
+    font-weight: 300;
+  }
+    
+  .TeamPara h3{
+    font-family: Impact;
+    color: red;
+  }
+
+  /*Nav*/
+/* POPPINS FONT */
 /*Login Page*/
 
 /* POPPINS FONT */
@@ -245,18 +296,5 @@ header{
         flex-direction: column;
         gap: 0;
     }
-}
-
-.form-box form .input-box i{
-    position: absolute;
-    right: 15px;
-    top: 70%;
-    color: black;
-    cursor:pointer;
-    transform: translateY(-50%);
-}
-.form-box form .input-box i.active::before{
-    color: rgb(37, 107, 107);
-    content: "\f070";
 }
 
