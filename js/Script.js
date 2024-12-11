@@ -1,5 +1,5 @@
 
-   
+
    function myMenuFunction() {
     var i = document.getElementById("navMenu");
 
@@ -31,5 +31,6 @@
         x.style.opacity = 0;
         y.style.opacity = 1;
     }
+
 
     

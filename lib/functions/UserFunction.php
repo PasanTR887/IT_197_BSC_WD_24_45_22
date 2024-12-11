@@ -69,7 +69,7 @@ function Authentication ($Email,$UserPass){
                     header('location:lib/views/dashboards/admin.php');
                 } else {
                     //redirect this user into the user dashboard
-                    header('location:lib/views/dashboards/user.php');
+                    header('location:lib/views/dashboards/home.php');
                 }
             } else {
                 return ("Your Account Has Been Diactivated !");

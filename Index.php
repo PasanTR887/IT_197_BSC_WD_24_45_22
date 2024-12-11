@@ -27,7 +27,7 @@ if(isset($_POST['btnLogin'])){
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="./lib/views/dashboards/user.php" class="link">Home</a></li>
+                <li><a href="./lib/views/dashboards/home.php" class="link">Home</a></li>
                 <li><a href="./lib/views/dashboards/FindMatch.php" class="link">Find Match</a></li>
                 <li><a href="./lib/views/dashboards/inbox.php" class="link">Inbox</a></li>
                 <li><a href="#" class="link">Notifications</a></li>
